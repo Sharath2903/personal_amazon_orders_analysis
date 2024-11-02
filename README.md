@@ -1,9 +1,10 @@
-# Amazon orders analysis using SQL 
+# Amazon Orders Analysis Using SQL
 
 ![Amazon logo](https://github.com/Sharath2903/personal_amazon_orders_analysis/blob/main/amazon_logo.jpg)
 
 ## Overview
-This project involves a comprehensive analysis of my Friend's Amazon online orders, aiming to extract valuable insights and answer key questions based on my order history. The following README provides a detailed overview of the project's objectives, challenges, solutions, findings, and conclusions.
+This project provides a comprehensive analysis of a friend’s Amazon order history, aiming to derive valuable insights and answer key questions. This README outlines the project’s objectives, key SQL queries, findings, and conclusions.
+
 
 ## Objectives
 
@@ -12,7 +13,7 @@ This project involves a comprehensive analysis of my Friend's Amazon online orde
 - User-Specific Order Patterns: Identify the most frequent orderer on the account and analyze each person’s contribution to 
   overall order volume.
 - Tax Analysis: Calculate the total tax paid on each order to assess the impact of taxes on overall spending.
-- Comparison of COD Orders vs Other Payment Methods
+- Payment Method Comparison: Compare COD orders with other payment methods to determine preferred modes of payment.
 
 ## Schema
 
@@ -116,7 +117,7 @@ ORDER BY
 **Objective:**  Identify the total number of orders and the total spending amount for each individual.
 
 
-### .5 Calculate the total amount spent for each month, ordered chronologically.
+### 5. Calculate the total amount spent for each month, ordered chronologically.
 
 ```sql
 SELECT  
