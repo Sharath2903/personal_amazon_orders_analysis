@@ -170,14 +170,11 @@ ORDER BY
 
 ```sql
 SELECT 
-    CONCAT
-	(
-    FLOOR(EXTRACT(EPOCH FROM AVG(shipping_date - order_date)) / 3600), 
-	'hr ',
-    FLOOR((EXTRACT(EPOCH FROM AVG(shipping_date - order_date)) % 3600) / 60),
-	'mins ',
-    FLOOR(EXTRACT(EPOCH FROM AVG(shipping_date - order_date)) % 60),
-	'sec' 
+    CONCAT(
+	EXTRACT(HOUR FROM AVG(shipping_date - order_date)), 
+	' hr ',
+     EXTRACT(MINUTE FROM AVG(shipping_date - order_date)),
+	' mins ' 
 	) AS avg_shipping_time
 FROM 
     order_history;
