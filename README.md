@@ -173,7 +173,7 @@ SELECT
     CONCAT(
 	EXTRACT(HOUR FROM AVG(shipping_date - order_date)), 
 	' hr ',
-     EXTRACT(MINUTE FROM AVG(shipping_date - order_date)),
+        EXTRACT(MINUTE FROM AVG(shipping_date - order_date)),
 	' mins ' 
 	) AS avg_shipping_time
 FROM 
